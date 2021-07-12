@@ -593,7 +593,10 @@
     overflow: scroll;
     border: 1px solid #d0d0d0;
     .order_left {
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // padding: 5px;
         @include SMAILL_PHONE_ {
             font-size: 14px;
         }

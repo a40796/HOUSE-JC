@@ -42,8 +42,8 @@ const Orders = ({ item }) => {
     <React.Fragment>
       <div className="order_container">
         <div className="order_left">
-          <p className="order_num">ORDER-NUMBER:{item.orderNum}</p>
-          <p className="order_title">
+          <span className="order_num">ORDER-NUMBER:{item.orderNum}</span>
+          <span className="order_title">
             <div className="title_left">
               {orderTitle.map((titelItem) => {
                 return <OrderTitle key={titelItem} titelItem={titelItem} />;
@@ -54,7 +54,7 @@ const Orders = ({ item }) => {
                 return <OrderDate key={dataItem} dataItem={dataItem} />;
               })}
             </div>
-          </p>
+          </span>
           <span
             className="goto_conmment"
             onClick={() => {

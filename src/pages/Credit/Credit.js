@@ -74,7 +74,7 @@ const Credit = () => {
     }, 2000);
   };
 
-  const handleConfirmtobuy = () => {
+  const handlePre = () => {
     history.push("/shopcart");
   };
 
@@ -130,12 +130,12 @@ const Credit = () => {
               <span className="sum_total">NT:{needToPay}</span>
             </p>
           </div>
-          <button className="credit_btn" onClick={handleConfirmtobuy}>
+          <button className="credit_btn" onClick={handleFinalBuy}>
             Confirm to buy
           </button>
         </div>
         <div className="comfrim_btn">
-          <button onClick={handleFinalBuy} className="pre_btn">
+          <button onClick={handlePre} className="pre_btn">
             <FontAwesomeIcon className="faPre" icon={faArrowCircleLeft} />
             Previous page, go to buy
           </button>
