@@ -54,4 +54,6 @@
 
 #### Layout
 
+- Homepage
+
 ![gif](https://github.com/a40796/HOUSE-JC/blob/main/homepage.gif)
