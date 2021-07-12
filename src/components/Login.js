@@ -175,12 +175,10 @@ const LoginForm = ({ loginArea, setLoginArea, setSignupArea, signupArea }) => {
       })
       .catch((error) => {
         console.log("faild", error);
+        document.querySelector(".errormsg_login").innerHTML = error.message;
       });
   };
   // 使用者試圖登入，但還不是會員時
-  const handleClickHere = () => {
-    setSignupArea(!signupArea);
-  };
   return (
     <form className="main" method="POST" action="">
       <label className="email" htmlFor="">
@@ -203,19 +201,7 @@ const LoginForm = ({ loginArea, setLoginArea, setSignupArea, signupArea }) => {
         placeholder="type in the password"
         ref={passRef}
       />
-      <div className="errormsg_login">
-        {!error
-          ? ""
-          : `email or password have error,
-           If you have not yet registered as a member,`}
-        {!error ? (
-          ""
-        ) : (
-          <span className="clickHere" onClick={handleClickHere}>
-            click here
-          </span>
-        )}
-      </div>
+      <div className="errormsg_login"></div>
       <input
         type="submit"
         value="log in"
