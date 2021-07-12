@@ -2,15 +2,15 @@
 
 # react - personalworks
 
-###### The purpose of the establishment of house jc is to learn about the culture of a Japan city through architecture, so we named a house jc . On this website, you can view the recent activities and news of Japanese architecture.
+The purpose of the establishment of house jc is to learn about the culture of a Japan city through architecture, so we named a house jc . On this website, you can view the recent activities and news of Japanese architecture.
 
 # Demo
 
 HOUSE JC :[https://a40796.github.io/HOUSE-JC/#/]
 
-#### user:user@gmail.com
+user:user@gmail.com
 
-#### password:useruser
+password:useruser
 
 # Technologies
 
