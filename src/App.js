@@ -220,6 +220,7 @@ function App() {
         setSignupArea={setSignupArea}
       />
       <Signup signupArea={signupArea} setSignupArea={setSignupArea} />
+
       <Switch>
         <Route path="/" exact>
           <Homepage />
@@ -246,6 +247,7 @@ function App() {
           <Conmment />
         </Route>
       </Switch>
+
       <Footer />
     </AppContainer>
   );
