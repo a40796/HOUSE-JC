@@ -122,9 +122,9 @@ const MainNews = () => {
     <React.Fragment>
       <Wrap>
         <Title
-          onClick={() => {
-            history.push("/news");
-          }}
+        // onClick={() => {
+        //   history.push("/news");
+        // }}
         >
           news
         </Title>
