@@ -70,6 +70,6 @@
 
 ![gif](https://github.com/a40796/HOUSE-JC/blob/main/boards.gif)
 
-- Login - Signup -Navigation
+- Login / Signup / Navigation
 
 ![gif](https://github.com/a40796/HOUSE-JC/blob/main/login.gif)
