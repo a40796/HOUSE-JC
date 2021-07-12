@@ -1,0 +1,870 @@
+// rwd 斷點
+@mixin LG_BIGPAD {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin LG_PAD_960 {
+    @media only screen and (max-width: 960px) {
+        @content;
+    }
+}
+@mixin MD_PAD {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin MD_PHONE_ {
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
+}
+@mixin SMAILL_PHONE_ {
+    @media only screen and (max-width: 414px) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+.bgcColor {
+    background-color: pink;
+    z-index: 999;
+}
+.show {
+    transition: opacity 400ms;
+}
+.hide {
+    opacity: 0;
+}
+.faBars {
+    font-size: 1.5rem;
+}
+.faTimes {
+    font-size: 20px;
+    color: #707070;
+}
+.cancleBtn {
+    width: 57%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5vh;
+    border-bottom: 0.2px solid #70707057;
+    // border-bottom: 0.2px solid white;
+    padding-bottom: 1em;
+    @include MD_PAD {
+        width: 70%;
+    }
+}
+.faSignInAlt {
+    border: none;
+    font-size: 20px;
+    background: none;
+    margin-right: 5px;
+}
+.faShoppingCart {
+    border: none;
+    font-size: 20px;
+    background: none;
+}
+.faUserPlus {
+    border: none;
+    font-size: 20px;
+    background: none;
+}
+.loginEl {
+    width: 500px;
+    height: 520px;
+    background-image: linear-gradient(to bottom, #ecb9a9, #c5d5db);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+    /* opacity: 0; */
+    box-shadow: 1px 1px #7070703a;
+}
+
+//login
+.show {
+    display: flex;
+    flex-direction: column;
+}
+.disappear {
+    display: none;
+}
+
+// login form
+.signupForm {
+    margin-top: 72px;
+}
+.main {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    .password {
+    }
+    .account_login {
+        padding: 5px;
+        border: none;
+    }
+    .account_signup {
+        padding: 5px;
+        border: none;
+    }
+    .pass_login {
+        padding: 5px;
+        border: none;
+    }
+    .errormsg_login {
+        margin-top: 15px;
+        color: #707070;
+        .clickHere {
+            color: #bb7171;
+        }
+    }
+
+    .pass_signup {
+        padding: 5px;
+        border: none;
+    }
+    .loginSubmit {
+        padding: 5px;
+        margin-top: 20px;
+        border: none;
+    }
+    .signup_errmsg {
+        text-align: left;
+        margin-top: 20px;
+        color: #b15f5f;
+        font-size: 14px;
+    }
+    .signup_errmsg_pass {
+        text-align: left;
+        margin-top: 5px;
+        color: #b15f5f;
+        font-size: 14px;
+    }
+    .signup_success {
+        text-align: left;
+        margin-top: 5px;
+        color: #b15f5f;
+        font-size: 14px;
+    }
+    .fbLogin {
+        width: 150px;
+        text-decoration: none;
+        color: black;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 3px;
+        border: 1px solid #3b5998;
+        color: #3b5998;
+        padding: 4px;
+        text-align: center;
+    }
+    .googleLogin {
+        width: 150px;
+        // margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 3px;
+        border: 1px solid #db4437;
+        color: #db4437;
+        padding: 4px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .or {
+        // margin: 10px;
+        margin: 10px;
+    }
+    .fbGoogleLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fbGoogleSignup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .birthday {
+        padding: 12px;
+        border: none;
+    }
+    .username {
+        border: none;
+        padding: 5px;
+    }
+    .address {
+        padding: 5px;
+        border: none;
+    }
+}
+//member class
+.member {
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    background: #00bcd459;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.memberCenter {
+    height: 100%;
+    width: 100%;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "courier", arial, sans-serif;
+    flex-direction: column;
+
+    .member_information {
+        width: 40%;
+        display: flex;
+        padding: 20px;
+        @include LG_BIGPAD {
+            width: 65%;
+        }
+        @include MD_PHONE_ {
+            width: 82%;
+        }
+        @include SMAILL_PHONE_ {
+            width: 100%;
+        }
+        .member_photo {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+        }
+        .member_info {
+            width: 50%;
+            height: 150px;
+            margin: auto;
+            text-align: left;
+            list-style-type: none;
+            .member_personal {
+                font-size: 21px;
+                color: gray;
+                font-weight: 600;
+                @include SMAILL_PHONE_ {
+                    font-size: 14px;
+                }
+            }
+            .mem_info {
+                display: flex;
+                @include SMAILL_PHONE_ {
+                    font-size: 14px;
+                }
+            }
+            li {
+                font-size: 18px;
+            }
+        }
+        .logout {
+            border: none;
+            margin-top: 100px;
+            background: #00bcd4;
+            // border-radius: 10px;
+            color: white;
+            padding: 5px;
+            @include SMAILL_PHONE_ {
+                padding: 1px;
+            }
+        }
+        .revise {
+            border: none;
+            margin-top: 100px;
+            background: #00bcd4;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+        }
+        .revise_ {
+            color: white;
+            background: #00bcd4;
+            padding: 5px;
+            margin-left: 5px;
+            @include SMAILL_PHONE_ {
+                padding: 1px;
+            }
+        }
+        .enter_ {
+            color: white;
+            background: #00bcd4;
+            padding: 5px;
+            margin-left: 5px;
+            @include SMAILL_PHONE_ {
+                padding: 1px;
+            }
+        }
+    }
+    .member_order_information {
+        width: 50%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: scroll;
+        @include LG_BIGPAD {
+            width: 75%;
+        }
+        @include MD_PHONE_ {
+            width: 92%;
+        }
+        .order_info_title {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 21px;
+            color: gray;
+            @include SMAILL_PHONE_ {
+                font-size: 14px;
+            }
+        }
+        .shopNow {
+            width: 100px;
+            margin: 50px auto;
+            padding: 15px;
+            border: none;
+            background: #00bcd4;
+            color: white;
+        }
+    }
+}
+//memberBtn
+.memberBtn {
+    border: none;
+    font-size: 18px;
+    color: gray;
+    background: none;
+    padding: 5px;
+    border-radius: 5px;
+    &:hover {
+        background: #00bcd4;
+        color: white;
+        font-size: 20px;
+    }
+}
+.memeber_input {
+    border: none;
+    background: none;
+    font-size: 18px;
+    width: 100%;
+    font-family: "courier", arial, sans-serif;
+    @include SMAILL_PHONE_ {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: #00bcd4;
+    }
+}
+.btn {
+    margin-top: 10px;
+    @include SMAILL_PHONE_ {
+        font-size: 14px;
+    }
+}
+
+//shop
+.shop_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 0;
+
+    // margin-bottom: 1000px;
+    .shop_confirm {
+        width: 90%;
+        height: 700px;
+        overflow: scroll;
+        margin: 0 auto;
+        // background-color: gray;
+    }
+    .comfirm_title {
+        .go_to_buy {
+            text-align: center;
+            font-family: "courier", arial, sans-serif;
+            font-size: 20px;
+            position: fixed;
+            background-image: linear-gradient(to right, #e6bbaa, #7ed7ef);
+            top: calc(50% - 100px);
+            left: calc(50% - 185px);
+            padding: 5px;
+            color: white;
+        }
+    }
+}
+.gotoPay {
+    text-align: center;
+    width: 200px;
+    margin: 100px auto;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+.shop {
+    font-family: ProximaNova, sans-serif;
+    padding: 15px;
+    width: 60%;
+    margin: 30px auto;
+    background: #ffffff7a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 2px #e2e1e1;
+    @include LG_BIGPAD {
+        width: 100%;
+    }
+
+    .item_cell {
+        width: 50%;
+        height: 30%;
+        display: flex;
+        // margin-top: 100px;
+        align-items: center;
+        justify-content: space-around;
+        @include LG_BIGPAD {
+            width: 70%;
+        }
+        @include MD_PHONE_ {
+            padding: 15px;
+        }
+        .shop_item {
+            display: flex;
+            flex-direction: column;
+            @include MD_PHONE_ {
+                font-size: 14px;
+            }
+            .item_style {
+                list-style-type: none;
+                color: #707070;
+            }
+            .order_smalltitle {
+                color: black;
+                border-bottom: 1px solid;
+                @include MD_PHONE_ {
+                    // font-size: 10px;
+                }
+            }
+        }
+        .orderImg {
+            width: 100%;
+            // height: 150px;
+            @include MD_PHONE_ {
+                width: 100%;
+            }
+            @include SMAILL_PHONE_ {
+                display: none;
+            }
+        }
+    }
+    .order_comfirm_btn {
+        padding: 5px;
+        background: rgb(6, 102, 235);
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+// credit
+.pay_container {
+    height: 100vh;
+    margin-top: 100px;
+    margin-top: 300px;
+    .credit_title {
+        text-align: center;
+        font-size: 22px;
+        color: gray;
+        letter-spacing: 5px;
+    }
+    .credit_wrap {
+        margin-top: 20px;
+        width: 20%;
+        margin: 0 auto;
+        background: #ffffff9c;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px #9e9e9e73;
+    }
+    .credit_container {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .label_ {
+        }
+        .input_ {
+            height: 20px;
+            border: none;
+            box-shadow: 2px 2px #9e9e9e73;
+            margin-bottom: 10px;
+        }
+    }
+    .comfrim_btn {
+        width: 20%;
+        margin: 100px auto;
+        .pre_btn {
+            width: 100%;
+            height: 54px;
+            padding: 12px;
+            border: none;
+            color: white;
+            background: #7070709c;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 27px;
+        }
+        .faPre {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .total_pay {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        .total {
+            border-bottom: 1px solid gray;
+            padding: 10px 0;
+            .sum_total {
+            }
+        }
+    }
+    .credit_btn {
+        width: 100%;
+        border: none;
+        padding: 5px;
+        background: #0666eb;
+        color: white;
+        border-radius: 2px;
+    }
+}
+
+//thankyou div
+
+.thank {
+    width: 550px;
+    height: 200px;
+    background: #585051bf;
+    position: fixed;
+    left: calc(50% - 275px);
+    top: calc(50% - 100px);
+    border-radius: 6px;
+    text-align: center;
+}
+.thankTxt {
+    margin-top: 70px;
+    color: white;
+    font-size: 1.6rem;
+}
+.Purchase_num {
+    color: white;
+}
+
+//orders
+.order_container {
+    // background-color: #ffffff85;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto 0;
+    // border-radius: 10px;
+    overflow: scroll;
+    border: 1px solid #d0d0d0;
+    .order_left {
+        padding: 5px;
+        @include SMAILL_PHONE_ {
+            font-size: 14px;
+        }
+        .order_title {
+            display: flex;
+            height: 50px;
+            justify-content: space-around;
+            .title_left {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+            .date_right {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+//login alert area
+.login_alert {
+    width: 500px;
+    height: 125px;
+    background: #382b2dcc;
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(50% - 50px);
+    padding: 10px;
+
+    ._x {
+        margin: 10px 10px;
+        color: #8eeeef;
+    }
+    .text {
+        text-align: center;
+        color: white;
+        font-family: "courier", arial, sans-serif;
+    }
+}
+
+// 錯誤文字提醒
+.text_red {
+    color: red;
+}
+// signup success
+.success_signup {
+    width: 600px;
+    height: 100px;
+    background: #655b5dad;
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 300px);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+//blogger
+.blogger_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background: #f7f4ed;
+    background: rgb(255, 255, 255);
+    .blogger_top_title {
+        margin-top: 324px;
+        font-size: 26px;
+        letter-spacing: 2px;
+        color: black;
+        margin-bottom: -156px;
+        font-family: cursive;
+        font-weight: 300;
+        @include MD_PHONE_ {
+            margin-top: 200px;
+            margin-bottom: -200px;
+        }
+        @include SMAILL_PHONE_ {
+            font-size: 20px;
+        }
+        &:hover {
+            color: rgb(243, 121, 118);
+            font-weight: 600;
+        }
+    }
+    .blogger_img {
+        margin-top: 300px;
+        margin-bottom: 100px;
+        width: 68%;
+        display: flex;
+        justify-content: space-between;
+        @include MD_PAD {
+            flex-direction: column;
+        }
+        .img_photo {
+            @include MD_PAD {
+                text-align: center;
+            }
+            .img_item {
+                width: 100%;
+                @include MD_PAD {
+                    width: 80%;
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+
+    .blogger_title {
+        font-size: 26px;
+        letter-spacing: 2px;
+        color: black;
+        margin-bottom: -50px;
+        font-family: cursive;
+        font-weight: 300;
+        @include SMAILL_PHONE_ {
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: rgb(243, 121, 118);
+            font-weight: 600;
+        }
+    }
+    .blogger_comment {
+        width: 80%;
+        height: 500px;
+        /* border: 1px solid #d0d0d0; */
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 150px auto;
+        padding: 13px;
+
+        .item {
+            width: 300px;
+            border: none;
+            /* border: 1px solid #d0d0d0; */
+            margin: 10px;
+            background: #8080800d;
+            box-shadow: 2px 2px #80808029;
+            &:hover {
+                transform: translateY(-10px);
+                background: #e4952e11;
+            }
+        }
+    }
+    .bookmark {
+        margin-top: 30px;
+        a {
+            margin-left: 5px;
+        }
+    }
+
+    .add_comment {
+        width: 80%;
+        height: 300px;
+        border: 1px solid #d0d0d0;
+    }
+}
+// conmment item
+.item {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #d0d0d0;
+    margin-left: 10px;
+    .order_wrap {
+        width: 90%;
+        height: 90%;
+        margin: 25px auto;
+        .orderTime {
+            text-align: right;
+            color: #707070;
+        }
+
+        .orderTitle {
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .orderName {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .orderText {
+            font-family: "courier", arial, sans-serif;
+            margin-top: 30px;
+            color: gray;
+        }
+    }
+}
+//go to conmmment button
+.goto_conmment {
+    font-size: 12px;
+    background: #00bcd4;
+    color: white;
+    width: 124px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    @include SMAILL_PHONE_ {
+        padding: 2px;
+    }
+}
+//
+.conmment_container {
+    height: 100vh;
+    .conmment_wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "courier", arial, sans-serif;
+        .big_title {
+        }
+        .comment_title {
+            width: 40%;
+            @include MD_PHONE_ {
+                width: 60%;
+            }
+            @include SMAILL_PHONE_ {
+                width: 80%;
+            }
+            .order_title {
+                color: white;
+                background: #818b8c;
+                padding: 5px 2px;
+            }
+            .point {
+                color: #707070;
+            }
+            .textarea {
+                background: #ffffff42;
+                border: none;
+                width: 100%;
+                height: 200px;
+            }
+            .comment_btn {
+                border: none;
+                color: white;
+                background: #00bcd4;
+                padding: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+// comment item
+.comment_container {
+    height: 200px;
+    // background: gray;
+    border: 1px solid #d0d0d0;
+    margin: 20px auto 0;
+}
+
+//comment_success
+.comment_success {
+    width: 300px;
+    height: 40px;
+    position: fixed;
+    top: calc(50% - 20px);
+    left: calc(50% - 150px);
+    background: #00000091;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
