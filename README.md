@@ -45,3 +45,7 @@
 - Version Control : Git / GitHub
 - WebStorage
 - TapPay
+
+# Structure
+
+![image](https://github.com/a40796/HOUSE-JC/blob/main/structure.png)
