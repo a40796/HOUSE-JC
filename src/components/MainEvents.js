@@ -110,7 +110,7 @@ const MainEvents = () => {
       .get()
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          console.log(doc.data().imgUrl);
+          // console.log(doc.data().imgUrl);
           let img = doc.data().imgUrl;
           setImg(img);
         });

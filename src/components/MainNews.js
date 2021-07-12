@@ -113,7 +113,7 @@ const MainNews = () => {
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
           news_arr.push(doc.data());
-          console.log(news_arr);
+          // console.log(news_arr);
         });
         setNews(news_arr);
       });
@@ -130,7 +130,7 @@ const MainNews = () => {
         </Title>
         <NewsContainer>
           {news.map((item) => {
-            return <News item={item} />;
+            return <News key={item.index} item={item} />;
           })}
         </NewsContainer>
       </Wrap>

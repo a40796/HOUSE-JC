@@ -167,7 +167,7 @@ const Nav = ({
     .get()
     .then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        console.log(doc.data().name);
+        // console.log(doc.data().name);
         let loginName = doc.data().name;
         document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
       });

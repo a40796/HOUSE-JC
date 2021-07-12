@@ -46,12 +46,12 @@ const Orders = ({ item }) => {
           <p className="order_title">
             <div className="title_left">
               {orderTitle.map((titelItem) => {
-                return <OrderTitle titelItem={titelItem} />;
+                return <OrderTitle key={titelItem} titelItem={titelItem} />;
               })}
             </div>
             <div className="date_right">
               {orderDate.map((dataItem) => {
-                return <OrderDate dataItem={dataItem} />;
+                return <OrderDate key={dataItem} dataItem={dataItem} />;
               })}
             </div>
           </p>

@@ -18,18 +18,6 @@ const Root = styled.div`
   padding-bottom: 25vh;
   background: rgb(243, 244, 245);
 `;
-const EventSubTitle = styled.h4`
-  font-size: 14px;
-  color: #707070;
-  text-align: left;
-  padding: 0 10px;
-  ${MD_PAD} {
-    padding: 0;
-  }
-  ${MD_PHONE_} {
-    display: none;
-  }
-`;
 const EventBigTitle = styled.h1`
   line-height: 1;
   font-family: cursive, sans-serif;
@@ -69,14 +57,12 @@ const Events = ({ shopCartBtn, setShopCartBtn }) => {
 
   return (
     <Root>
-      <EventBigTitle>
-        <EventSubTitle>Start you Travel for architecture</EventSubTitle>
-        Pick the card , you interest in
-      </EventBigTitle>
+      <EventBigTitle>Pick the card , you interest in</EventBigTitle>
       <EventWrapper>
         {state.map((item) => {
           return (
             <Event
+              key={item.id}
               item={item}
               shopCartBtn={shopCartBtn}
               setShopCartBtn={setShopCartBtn}

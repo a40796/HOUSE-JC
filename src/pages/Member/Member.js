@@ -27,7 +27,6 @@ const handlelocalStorageData = () => {
 };
 let infoData = handlelocalStorageData();
 const handleLogOut = (history) => {
-  // console.log("aaa");
   localStorage.clear();
   history.push("/");
   window.location.reload();
@@ -163,9 +162,6 @@ const Member = ({ shopCartBtn, setShopCartBtn }) => {
         setArr(order_arr);
       });
   }, []);
-  // console.log(arr);
-  // console.log(order_arr);
-  // console.log(2);
   //處理訂單完成後的資料
   let order_num = localStorage.getItem("orderNum");
   let order_list = localStorage.getItem("list");
@@ -187,6 +183,9 @@ const Member = ({ shopCartBtn, setShopCartBtn }) => {
                 defaultValue={`${infoData.name}`}
                 onChange={handleUpdateName}
                 disabled={btnstate}
+                onClick={() => {
+                  console.log("test");
+                }}
               />
             </div>
             <div className="mem_info">
@@ -251,7 +250,7 @@ const Member = ({ shopCartBtn, setShopCartBtn }) => {
           <h4 className="order_info_title">ORDER INFORMATION</h4>
           {arr.length > 0 ? (
             arr.map((item) => {
-              return <Orders item={item} />;
+              return <Orders key={item.orderNum} item={item} />;
             })
           ) : (
             <div style={{ textAlign: "center", padding: "10px" }}>

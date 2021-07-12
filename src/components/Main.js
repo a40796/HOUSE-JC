@@ -199,7 +199,7 @@ const Main = () => {
       .get()
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          console.log(doc.data().main_imgurl);
+          // console.log(doc.data().main_imgurl);
           let img = doc.data().main_imgurl;
           setImg(img);
         });

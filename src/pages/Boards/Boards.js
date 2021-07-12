@@ -11,33 +11,32 @@ import {
   MD_PHONE_,
   SMAILL_PHONE_,
 } from "../../constants/style";
+import { logDOM } from "@testing-library/react";
 
 const db = firebase.firestore();
 
 // 通過 URL 下載數據
-var storageRef = firebase.storage().ref();
+// var storageRef = firebase.storage().ref();
 
-storageRef
-  .child("events/Gei.png")
-  .getDownloadURL()
-  .then((url) => {
-    var xhr = new XMLHttpRequest();
-    xhr.responseType = "blob";
-    xhr.onload = (event) => {
-      var blob = xhr.response;
-    };
-    xhr.open("GET", url);
-    xhr.send();
-    console.log(url);
-  })
-  .catch((error) => {
-    console.log(error);
-    // Handle any errors
-  });
+// storageRef
+//   .child("events/Gei.png")
+//   .getDownloadURL()
+//   .then((url) => {
+//     var xhr = new XMLHttpRequest();
+//     xhr.responseType = "blob";
+//     xhr.onload = (event) => {
+//       var blob = xhr.response;
+//     };
+//     xhr.open("GET", url);
+//     xhr.send();
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 const Conmment_item = ({ item }) => {
   return (
-    <div className="item" key={item.orderNum}>
+    <div className="item">
       <div className="order_wrap">
         <div className="orderTime">{item.orderTime}</div>
         <div className="orderTitle">{item.orderTitle}</div>
@@ -112,13 +111,13 @@ const Blogger = () => {
         <h4 className="blogger_top_title">- Many photos are worth taking -</h4>
         <div className="" className="blogger_img">
           {img.map((item) => {
-            return <Conmment_img item={item} />;
+            return <Conmment_img key={item.imgurl} item={item} />;
           })}
         </div>
         <h4 className="blogger_title">- Worthy of your reference - </h4>
         <div className="blogger_comment">
-          {arr.map((item) => {
-            return <Conmment_item item={item} />;
+          {arr.map((item, index) => {
+            return <Conmment_item key={index} item={item} />;
           })}
         </div>
       </div>
