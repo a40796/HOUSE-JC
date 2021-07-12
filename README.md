@@ -57,3 +57,19 @@
 - Homepage
 
 ![gif](https://github.com/a40796/HOUSE-JC/blob/main/homepage.gif)
+
+- News
+
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/news.gif)
+
+- Events
+
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/events.gif)
+
+- Boards
+
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/boards.gif)
+
+- Login - Signup -Navigation
+
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/login.gif)
