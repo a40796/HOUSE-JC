@@ -10,8 +10,36 @@
 
 # Technologies
 
-#### FRONT-END Basic
+#### Front-End Basic
 
-- Red
-- Green
-- Blue
+- HTML
+- CSS
+- JavaScript(ES6)
+
+#### Layout
+
+- RWD
+- Flexbox
+
+#### Front-End Frameworks
+
+- React
+- React Router
+- SCSS
+- Styled Component
+
+#### Firebase Services
+
+- Authentication
+- Cloud Firebase
+- Storage
+
+#### Tool for Develoment
+
+- NPM
+
+#### Other
+
+- Version Control : Git / GitHub
+- WebStorage
+- TapPay
