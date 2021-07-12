@@ -198,7 +198,7 @@ const LoginForm = ({ loginArea, setLoginArea, setSignupArea, signupArea }) => {
         type="text"
         className="pass_login"
         name="pass_login"
-        placeholder="type in the password"
+        placeholder="Please fill in more than six numbers or letters"
         ref={passRef}
       />
       <div className="errormsg_login"></div>
