@@ -56,4 +56,4 @@
 
 - Homepage
 
-![gif]https://github.com/a40796/HOUSE-JC/blob/main/homepage.gif)
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/homepage.gif)
