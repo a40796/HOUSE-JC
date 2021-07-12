@@ -9,3 +9,9 @@
 #### password:useruser
 
 # Technologies
+
+#### FRONT-END Basic
+
+- Red
+- Green
+- Blue
