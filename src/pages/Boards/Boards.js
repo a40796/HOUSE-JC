@@ -19,13 +19,14 @@ const db = firebase.firestore();
 // var storageRef = firebase.storage().ref();
 
 // storageRef
-//   .child("events/Gei.png")
+//   .child("user/user.png")
 //   .getDownloadURL()
 //   .then((url) => {
 //     var xhr = new XMLHttpRequest();
 //     xhr.responseType = "blob";
 //     xhr.onload = (event) => {
 //       var blob = xhr.response;
+//       console.log(url);
 //     };
 //     xhr.open("GET", url);
 //     xhr.send();

@@ -165,14 +165,23 @@ const Member = ({ shopCartBtn, setShopCartBtn }) => {
   //處理訂單完成後的資料
   let order_num = localStorage.getItem("orderNum");
   let order_list = localStorage.getItem("list");
-  // let order_list_arr = JSON.parse(order_list);
 
-  const [name, setName] = useState("albert");
+  //處理user照片
+  db.collection("users")
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        console.log(doc.data().userUrl);
+        let url = doc.data().userUrl;
+        document.querySelector(".member_photo").setAttribute("src", url);
+      });
+    });
+
   return (
     <React.Fragment>
       <div className="memberCenter">
         <div className="member_information">
-          <img className="member_photo" src={infoData.photo}></img>
+          <img className="member_photo"></img>
           <form className="member_info">
             <label className="member_personal">PERSONAL INFORMATION</label>
             <div className="mem_info">
