@@ -75,3 +75,10 @@ password:useruser
 - Login / Signup / Navigation
 
 ![gif](https://github.com/a40796/HOUSE-JC/blob/main/login.gif)
+
+#### Login / Signup
+
+- Firebase - registration and login -
+- Error message display
+- Block duplicate registration
+  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/signup.gif)
