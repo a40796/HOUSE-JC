@@ -77,7 +77,7 @@ const Logo = styled(Link)`
     width: 30vw;
   }
   ${SMAILL_PHONE_} {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 `;
 const Center = styled.div``;
