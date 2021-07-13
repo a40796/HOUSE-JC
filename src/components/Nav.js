@@ -73,6 +73,9 @@ const Logo = styled(Link)`
   ${MD_PHONE_} {
     width: 30vw;
   }
+  ${SMAILL_PHONE_} {
+    margin-left: 10px;
+  }
 `;
 const Center = styled.div``;
 const CenterUl = styled.ul`
