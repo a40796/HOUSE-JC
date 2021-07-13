@@ -87,8 +87,8 @@ password:user123
 - Google Login
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/googleLogin.gif)
 
-  #### Memeber
+#### Memeber
 
-  - purchase order
-  - Multiple orders
-    ![gif](https://github.com/a40796/HOUSE-JC/blob/main/member.gif)
+- purchase order
+- Multiple orders
+  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/member.gif)
