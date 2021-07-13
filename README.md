@@ -8,7 +8,7 @@ The purpose of the establishment of house jc is to learn about the culture of a 
 
 Link:[HOUSE JC](https://a40796.github.io/HOUSE-JC/#/)
 
-user:user@gmail.com
+user:useuser@gmail.com
 
 password:useruser
 
@@ -82,3 +82,4 @@ password:useruser
 - Error message display
 - Block duplicate registration
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/signup.gif)
+  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/userlogin.gif)
