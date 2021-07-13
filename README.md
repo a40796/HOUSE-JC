@@ -73,7 +73,7 @@ password:user123
 
 - Login / Signup / Navigation
 
-![gif](https://github.com/a40796/HOUSE-JC/blob/main/login.gif)
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/nav.gif)
 
 #### Login / Signup
 
