@@ -55,21 +55,9 @@ password:user123
 
 #### Layout
 
-- Homepage
+- Homepage / News / Events / Boards
 
-![gif](https://github.com/a40796/HOUSE-JC/blob/main/homepage.gif)
-
-- News
-
-![gif](https://github.com/a40796/HOUSE-JC/blob/main/news.gif)
-
-- Events
-
-![gif](https://github.com/a40796/HOUSE-JC/blob/main/events.gif)
-
-- Boards
-
-![gif](https://github.com/a40796/HOUSE-JC/blob/main/boards.gif)
+![gif](https://github.com/a40796/HOUSE-JC/blob/main/layout.gif)
 
 - Login / Signup / Navigation
 
