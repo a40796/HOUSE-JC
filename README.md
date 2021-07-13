@@ -81,7 +81,7 @@ password:useruser
 - Firebase - registration and login -
 - Error message display
 - Block duplicate registration
-  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/signup.gif)
-  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/userlogin.gif)
+  ![gif]()
+  ![gif]()
 - user revise
-  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/revise.gif)
+  ![gif]()
