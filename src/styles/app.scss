@@ -63,7 +63,8 @@
     background: none;
     margin-right: 5px;
     @include SMAILL_PHONE_ {
-        font-size: 10px;
+        font-size: 14px;
+        width: 30%;
     }
 }
 .faShoppingCart {
@@ -78,7 +79,8 @@
     font-size: 20px;
     background: none;
     @include SMAILL_PHONE_ {
-        font-size: 10px;
+        font-size: 14px;
+        width: 33%;
     }
 }
 .loginEl {

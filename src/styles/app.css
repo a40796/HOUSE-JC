@@ -54,7 +54,8 @@
 
 @media only screen and (max-width: 414px) {
   .faSignInAlt {
-    font-size: 10px;
+    font-size: 14px;
+    width: 30%;
   }
 }
 
@@ -72,7 +73,8 @@
 
 @media only screen and (max-width: 414px) {
   .faUserPlus {
-    font-size: 10px;
+    font-size: 14px;
+    width: 33%;
   }
 }
 
