@@ -161,7 +161,7 @@ const Panel = ({ style }) => {
           <PanelP>Geisha architecture</PanelP>
           <PanelP>About eating architecture</PanelP>
         </PanelEvents>
-        <PanelProjects to="/blogger" onClick={handleCancleClick}>
+        <PanelProjects to="/boards" onClick={handleCancleClick}>
           REFERANCES
           <PanelP>Old-fashioned building</PanelP>
           <PanelP>Mr.Ando's hometown</PanelP>
