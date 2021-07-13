@@ -92,6 +92,9 @@ const NewCell = styled.div`
     width: 50vw;
     height: 50vw;
   }
+  ${SMAILL_PHONE_} {
+    margin-top: 100px;
+  }
 `;
 const NewTitle = styled.div`
   font-size: 1.6rem;
