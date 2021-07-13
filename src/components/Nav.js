@@ -190,7 +190,7 @@ const Nav = ({
 
   const [loginBtn, setLoginBtn] = useState({
     state: true,
-    text: "Log in",
+    text: "Log In",
     email: email,
   });
   const [signUpBtn, setsignUpBtn] = useState({
