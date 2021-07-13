@@ -8,9 +8,9 @@ The purpose of the establishment of house jc is to learn about the culture of a 
 
 Link:[HOUSE JC](https://a40796.github.io/HOUSE-JC/#/)
 
-user:useuser@gmail.com
+user:user123@gmail.com
 
-password:useruser
+password:user123
 
 # Technologies
 
