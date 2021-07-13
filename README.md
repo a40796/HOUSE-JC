@@ -93,3 +93,9 @@ password:user123
 - Multiple orders
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/member.gif)
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/multiple%20orders.gif)
+
+#### Boards
+
+- Members can leave a message
+- Appear on the boards in time
+  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/voice.gif)
