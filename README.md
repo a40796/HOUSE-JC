@@ -46,7 +46,6 @@ password:user123
 
 - Version Control : Git / GitHub
 - WebStorage
-- TapPay
 
 # Structure
 
@@ -78,7 +77,7 @@ password:user123
 
 #### Login / Signup
 
-- Firebase - registration and login -
+- Firebase - registration and login
 - Error message display
 - Block duplicate registration
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/signup.gif)
@@ -87,3 +86,5 @@ password:user123
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/revise.gif)
 - Google Login
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/googleLogin.gif)
+
+  #### Memeber
