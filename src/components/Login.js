@@ -125,6 +125,7 @@ const HandleGoogleLogin = (history, loginArea, setLoginArea, LoginDom) => {
       window.location.reload();
     })
     .catch((error) => {
+      console.log(error);
       var errorCode = error.code;
       var errorMessage = error.message;
       var email = error.email;

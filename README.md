@@ -83,5 +83,7 @@ password:user123
 - Block duplicate registration
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/signup.gif)
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/login.gif)
-- user revise
+- User revise
   ![gif](https://github.com/a40796/HOUSE-JC/blob/main/revise.gif)
+- Google Login
+  ![gif](https://github.com/a40796/HOUSE-JC/blob/main/googleLogin.gif)
