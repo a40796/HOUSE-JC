@@ -47,6 +47,9 @@ const Top = styled.div`
   ${MD_PHONE_} {
     padding: 0 10px 0 10px;
   }
+  ${SMAILL_PHONE_} {
+    padding: 0 20px 0 20px;
+  }
 `;
 const Left = styled.div`
   display: flex;
