@@ -93,7 +93,7 @@ const NewCell = styled.div`
     height: 50vw;
   }
   ${SMAILL_PHONE_} {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 `;
 const NewTitle = styled.div`
