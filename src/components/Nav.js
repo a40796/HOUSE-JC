@@ -122,7 +122,7 @@ const Right = styled.div`
     margin-right: 0;
   }
   ${SMAILL_PHONE_} {
-    width: 50%;
+    width: 60%;
   }
 `;
 const Login = styled(Link)`
