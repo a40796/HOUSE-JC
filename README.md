@@ -102,4 +102,4 @@ password:user123
 
 #### What I want to do in the future
 
-- Launch an event on this website
+- organize a badminton activity
