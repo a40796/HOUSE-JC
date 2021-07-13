@@ -6,7 +6,7 @@ The purpose of the establishment of house jc is to learn about the culture of a 
 
 # Demo
 
-Link:[HOUSE JC](https://a40796.github.io/HOUSE-JC/#/)
+Link:[HOUSE JC](https://a40796.github.io/HOUSE-JC/#/)
 
 user:user123@gmail.com
 
