@@ -162,7 +162,7 @@ const Panel = ({ style }) => {
           <PanelP>About eating architecture</PanelP>
         </PanelEvents>
         <PanelProjects to="/boards" onClick={handleCancleClick}>
-          REFERANCES
+          BOARDS
           <PanelP>Old-fashioned building</PanelP>
           <PanelP>Mr.Ando's hometown</PanelP>
         </PanelProjects>
