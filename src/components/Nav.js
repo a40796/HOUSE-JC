@@ -48,7 +48,7 @@ const Top = styled.div`
     padding: 0 10px 0 10px;
   }
   ${SMAILL_PHONE_} {
-    padding: 0 20px 0 20px;
+    padding: 0 5px 0 5px;
   }
 `;
 const Left = styled.div`
