@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/HOUSE-JC/static/css/main.76aa86a5.chunk.css",
-    "main.js": "/HOUSE-JC/static/js/main.112cea57.chunk.js",
-    "main.js.map": "/HOUSE-JC/static/js/main.112cea57.chunk.js.map",
+    "main.css": "/HOUSE-JC/static/css/main.a553b353.chunk.css",
+    "main.js": "/HOUSE-JC/static/js/main.b048333f.chunk.js",
+    "main.js.map": "/HOUSE-JC/static/js/main.b048333f.chunk.js.map",
     "runtime-main.js": "/HOUSE-JC/static/js/runtime-main.b3f69aee.js",
     "runtime-main.js.map": "/HOUSE-JC/static/js/runtime-main.b3f69aee.js.map",
     "static/js/2.e6d3cf94.chunk.js": "/HOUSE-JC/static/js/2.e6d3cf94.chunk.js",
     "static/js/2.e6d3cf94.chunk.js.map": "/HOUSE-JC/static/js/2.e6d3cf94.chunk.js.map",
     "index.html": "/HOUSE-JC/index.html",
-    "static/css/main.76aa86a5.chunk.css.map": "/HOUSE-JC/static/css/main.76aa86a5.chunk.css.map",
+    "static/css/main.a553b353.chunk.css.map": "/HOUSE-JC/static/css/main.a553b353.chunk.css.map",
     "static/js/2.e6d3cf94.chunk.js.LICENSE.txt": "/HOUSE-JC/static/js/2.e6d3cf94.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b3f69aee.js",
     "static/js/2.e6d3cf94.chunk.js",
-    "static/css/main.76aa86a5.chunk.css",
-    "static/js/main.112cea57.chunk.js"
+    "static/css/main.a553b353.chunk.css",
+    "static/js/main.b048333f.chunk.js"
   ]
 }
