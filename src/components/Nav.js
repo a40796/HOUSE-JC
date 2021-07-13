@@ -121,6 +121,9 @@ const Right = styled.div`
   ${MD_PHONE_} {
     margin-right: 0;
   }
+  ${SMAILL_PHONE_} {
+    margin-right: 10px;
+  }
 `;
 const Login = styled(Link)`
   color: black;
