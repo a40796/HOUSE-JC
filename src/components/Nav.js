@@ -122,7 +122,8 @@ const Right = styled.div`
     margin-right: 0;
   }
   ${SMAILL_PHONE_} {
-    width: 60%;
+    width: 50%;
+    justify-content: flex-start;
   }
 `;
 const Login = styled(Link)`
