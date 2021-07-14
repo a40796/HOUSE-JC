@@ -175,16 +175,16 @@ const Nav = ({
   let name = localStorage.getItem("username");
 
   // 將登入後使用者資訊從firebase中拿出定義
-  db.collection("members")
-    .where("name", "==", name)
-    .get()
-    .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        // console.log(doc.data().name);
-        let loginName = doc.data().name;
-        // document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
-      });
-    });
+  // db.collection("members")
+  //   .where("name", "==", name)
+  //   .get()
+  //   .then((querySnapshot) => {
+  //     querySnapshot.forEach((doc) => {
+  //       console.log(doc.data().name);
+  //       let loginName = doc.data().name;
+  //       document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
+  //     });
+  //   });
 
   const location = useLocation();
 
