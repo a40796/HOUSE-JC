@@ -181,7 +181,7 @@ const Nav = ({
     .then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
         console.log(doc.data().name);
-        let loginName = doc.data().name;
+        // let loginName = doc.data().name;
         // document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
       });
     });
@@ -211,6 +211,7 @@ const Nav = ({
     history.push("/member");
   };
   const handleshopCart = () => {
+    console.log("aaa");
     history.push("/shopcart");
   };
 
