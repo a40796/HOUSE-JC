@@ -27,6 +27,7 @@ const handlelocalStorageData = () => {
 };
 let infoData = handlelocalStorageData();
 const handleLogOut = (history) => {
+  alert("Log out successfully");
   localStorage.clear();
   history.push("/");
   window.location.reload();
