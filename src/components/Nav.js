@@ -174,7 +174,7 @@ const Nav = ({
   let email = localStorage.getItem("userEmail");
   let name = localStorage.getItem("username");
 
-  將登入後使用者資訊從firebase中拿出定義;
+  // 將登入後使用者資訊從firebase中拿出定義;
   db.collection("members")
     .where("name", "==", name)
     .get()
