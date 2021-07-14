@@ -122,7 +122,7 @@ const Event = (props) => {
     let userEmail = localStorage.getItem("userEmail");
 
     if (userEmail === null) {
-      localStorage.setItem("list", null);
+      // localStorage.setItem("list", null);
       let login_alert = document.createElement("div");
       let text = document.createElement("div");
       text.classList.add("text");
