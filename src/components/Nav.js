@@ -182,7 +182,7 @@ const Nav = ({
       querySnapshot.forEach((doc) => {
         console.log(doc.data().name);
         let loginName = doc.data().name;
-        document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
+        // document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
       });
     });
 
@@ -252,7 +252,7 @@ const Nav = ({
             {!signUpBtn.email ? signUpBtn.text : ""}
           </button>
           <button className="memberBtn" onClick={handleMember}>
-            {/* {email ? `hi,${memberBtn}` : ""} */}
+            {email ? `hi,${memberBtn}` : ""}
           </button>
           {
             <button className="faShoppingCart " onClick={handleshopCart}>
