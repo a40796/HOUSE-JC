@@ -211,7 +211,7 @@ const Nav = ({
     history.push("/member");
   };
   const handleshopCart = () => {
-    console.log("aaa");
+    // console.log("aaa");
     history.push("/shopcart");
   };
 

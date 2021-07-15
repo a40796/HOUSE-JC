@@ -60,7 +60,7 @@ const ShopcartItem = ({ item, state, setState, listArr }) => {
 const Shopcart = () => {
   let history = useHistory();
   let list = localStorage.getItem("list");
-  console.log(list);
+  // console.log(list);
   let listArr = JSON.parse(list);
   const [state, setState] = useState(false);
   const gotoCreditPay = () => {
