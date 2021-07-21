@@ -106,7 +106,7 @@ const NewTitle = styled.div`
 const NewName = styled.div`
   font-weight: 300;
 `;
-const NewSeeMore = styled(Link)`
+const NewSeeMore = styled.h4`
   text-decoration: none;
   color: white;
   background: cadetblue;

@@ -162,17 +162,20 @@ const Nav = ({
   let name = localStorage.getItem("username");
 
   // 將登入後使用者資訊從firebase中拿出定義
-  db.collection("members")
-    .where("name", "==", name)
-    .get()
-    .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        // console.log(doc.data().name);
-        let loginName = doc.data().name;
-        document.querySelector(".memberBtn").innerHTML = `hi,${loginName}`;
+  function getUserName(callback) {
+    db.collection("members")
+      .where("name", "==", name)
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          let loginName = doc.data().name;
+          callback(loginName);
+        });
       });
-    });
-
+  }
+  let userName = getUserName((res) => {
+    document.querySelector(".memberBtn").innerHTML = `Hi,${res}`;
+  });
   const location = useLocation();
 
   const [loginBtn, setLoginBtn] = useState({

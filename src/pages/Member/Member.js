@@ -171,7 +171,7 @@ const Member = ({ shopCartBtn, setShopCartBtn }) => {
     .get()
     .then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        console.log(doc.data().userUrl);
+        // console.log(doc.data().userUrl);
         let url = doc.data().userUrl;
         document.querySelector(".member_photo").setAttribute("src", url);
       });

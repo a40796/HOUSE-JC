@@ -33,7 +33,7 @@ const NewsContainer = styled.div`
   }
 `;
 
-const Title = styled(Link)`
+const Title = styled.div`
   font-size: 1rem;
   color: white;
   background: rgb(236, 153, 147);
@@ -43,6 +43,7 @@ const Title = styled(Link)`
   top: 7px;
   left: -6px;
   text-decoration: none;
+  /* outline: 1px solid red; */
   ${LG_BIGPAD} {
     font-size: 0.8rem;
   }
@@ -113,7 +114,6 @@ const MainNews = () => {
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
           news_arr.push(doc.data());
-          // console.log(news_arr);
         });
         setNews(news_arr);
       });
@@ -122,9 +122,9 @@ const MainNews = () => {
     <React.Fragment>
       <Wrap>
         <Title
-        // onClick={() => {
-        //   history.push("/news");
-        // }}
+          onClick={() => {
+            history.push("./news");
+          }}
         >
           news
         </Title>

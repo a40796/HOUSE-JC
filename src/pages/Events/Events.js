@@ -106,7 +106,7 @@ const Events = ({ shopCartBtn, setShopCartBtn }) => {
 
   useEffect(async () => {
     const result = await axios(url_osaka);
-    console.log(result);
+    // console.log(result);
     let osaka_cloud = result.data.weather[0].description;
 
     setData(osaka_cloud);

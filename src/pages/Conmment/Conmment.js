@@ -22,7 +22,7 @@ const Conmment = () => {
       });
     setArr(Arr_comment);
   }, [arr]);
-  console.log(arr);
+  // console.log(arr);
   const [text, setText] = useState("");
   const handleCommentChange = (e) => {
     // console.log(text);
